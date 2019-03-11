@@ -147,6 +147,7 @@ public class UpdatesActivity extends UpdatesListActivity implements UpdateImport
                     mAdapter.removeItem(downloadId);
                     List<UpdateInfo> sortedUpdates =
                             mUpdaterService.getUpdaterController().getUpdates();
+                    downloadUpdatesList(false);
                     if (sortedUpdates.isEmpty()) {
                         findViewById(R.id.no_new_updates_view).setVisibility(View.VISIBLE);
                         findViewById(R.id.recycler_view).setVisibility(View.GONE);
