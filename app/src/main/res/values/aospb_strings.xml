@@ -21,6 +21,7 @@
     <string name="aospb_build_version"><xliff:g id="brand">%1$s</xliff:g></string>
     <string name="aospb_build_version_date"><xliff:g id="brand">%1$s</xliff:g> - <xliff:g id="date">%3$s</xliff:g></string>
     <string name="aospb_info_dialog_message">aosPB-Project updates are full installation packages. That means you can always install only the latest update, even if you skipped some in between!</string>
+    <string name="blocked_update_dialog_message_custom">This update cannot be installed using the updater app. Try installing update via recovery.</string>
 
     <!-- Updater backend stuff -->
     <string name="aospb_updater_server_url" translatable="false">https://raw.githubusercontent.com/aosPB-Project/aosPB_official_devices/refs/heads/15.1/devices/{device}.json</string>
