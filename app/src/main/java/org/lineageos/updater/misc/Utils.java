@@ -139,6 +139,12 @@ public class Utils {
             }
         }
 
+        // Check if the StringBuilder `json` is empty or not
+        if(json.length() == 0) {
+            Log.d(TAG, "JSON file is empty, skip parsing");
+            return updates; // Return an empty list and don't bother with parsing
+        }
+
         JSONObject obj = new JSONObject(json.toString());
         JSONArray updatesList = obj.getJSONArray("response");
         for (int i = 0; i < updatesList.length(); i++) {
@@ -225,6 +231,15 @@ public class Utils {
             throws IOException, JSONException {
         List<UpdateInfo> oldList = parseJson(oldJson, true);
         List<UpdateInfo> newList = parseJson(newJson, true);
+        // If old list is empty and new list isn't - there is an update
+        if (oldList.isEmpty() && !newList.isEmpty()) {
+            return true;
+        }
+        // If both lists are empty - we have no updates at all
+        if (oldList.isEmpty() && newList.isEmpty()) {
+            return false;
+        }
+
         Set<String> oldIds = new HashSet<>();
         for (UpdateInfo update : oldList) {
             oldIds.add(update.getDownloadId());
