@@ -41,7 +41,8 @@ android_app {
 
     required: [
         "privapp_whitelist_org.lineageos.updater",
-        "default-permissions_org.lineageos.updater"
+        "default-permissions_org.lineageos.updater",
+        "hiddenapi_whitelist_updater"
     ],
 }
 
@@ -58,5 +59,13 @@ prebuilt_etc {
     system_ext_specific: true,
     sub_dir: "default-permissions",
     src: "default-permissions_org.lineageos.updater.xml",
+    filename_from_src: true,
+}
+
+prebuilt_etc {
+    name: "hiddenapi_whitelist_updater",
+    system_ext_specific: true,
+    sub_dir: "default-permissions",
+    src: "hiddenapi_whitelist_updater.xml",
     filename_from_src: true,
 }
