@@ -1,7 +1,8 @@
-Updater
+aosPB-Project OTA Updater
 =======
 Simple application to download and apply OTA packages.
 
+**This is a fork of the LineageOS Updater app, with some modifications to make it work with the aosPB-Project.**
 
 Server requirements
 -------------------
@@ -17,8 +18,7 @@ a JSON with the following structure:
       "id": "5eb63bbbe01eeed093cb22bb8f5acdc3",
       "romtype": "nightly",
       "size": 314572800,
-      "url": "https://example.com/ota-package.zip",
-      "version": "15.1"
+      "url": "https://example.com/ota-package.zip"
     }
   ]
 }
@@ -29,8 +29,7 @@ The `filename` attribute is the name of the file to be downloaded.
 The `id` attribute is a string that uniquely identifies the update.  
 The `romtype` attribute is the string to be compared with the `ro.lineage.releasetype` property.  
 The `size` attribute is the size of the update expressed in bytes.  
-The `url` attribute is the URL of the file to be downloaded.  
-The `version` attribute is the string to be compared with the `ro.lineage.build.version` property.  
+The `url` attribute is the URL of the file to be downloaded.
 
 Additional attributes are ignored.
 
