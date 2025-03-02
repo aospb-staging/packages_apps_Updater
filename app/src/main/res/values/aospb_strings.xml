@@ -24,8 +24,8 @@
     <string name="blocked_update_dialog_message_custom">This update cannot be installed using the updater app. Try installing update via recovery.</string>
 
     <!-- Updater backend stuff -->
-    <string name="aospb_updater_server_url" translatable="false">https://raw.githubusercontent.com/aosPB-Project/aosPB_official_devices/refs/heads/15.1/devices/{device}.json</string>
-    <string name="aospb_menu_changelog_url" translatable="false">https://github.com/aosPB-Project/aosPB_official_devices/blob/15.1/changelogs/{device}.md</string>
+    <string name="aospb_updater_server_url" translatable="false">https://raw.githubusercontent.com/aosPB-Project/aosPB_official_devices/refs/heads/15.1/json/{device}.json</string>
+    <string name="aospb_menu_changelog_url" translatable="false">https://github.com/aosPB-Project/aosPB_official_devices/blob/15.1/changelogs/devices/{device}.md</string>
 
     <!-- Paths -->
     <string name="aospb_download_path" translatable="false">/data/system_updates/</string>
