@@ -38,6 +38,7 @@ import androidx.preference.PreferenceManager;
 import org.lineageos.updater.R;
 import org.lineageos.updater.UpdaterReceiver;
 import org.lineageos.updater.UpdatesActivity;
+import org.lineageos.updater.misc.BuildInfoUtils;
 import org.lineageos.updater.misc.Constants;
 import org.lineageos.updater.misc.StringGenerator;
 import org.lineageos.updater.misc.Utils;
