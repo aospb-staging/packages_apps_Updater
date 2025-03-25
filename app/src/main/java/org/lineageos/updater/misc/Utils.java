@@ -63,7 +63,7 @@ public class Utils {
     }
 
     public static File getDownloadPath(Context context) {
-        return new File(context.getString(R.string.download_path));
+        return new File(context.getString(R.string.aospb_download_path));
     }
 
     public static File getCachedUpdateList(Context context) {
